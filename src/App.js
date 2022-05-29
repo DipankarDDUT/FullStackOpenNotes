@@ -5,7 +5,9 @@ import './style.css';
 const Hello = ({ name, age }) => {
   return (
     <div>
-      <p>Hello {name}</p>
+      <p>
+        Hello {name} and {age}
+      </p>
     </div>
   );
 };
