@@ -2,11 +2,24 @@ import React from 'react';
 
 import './style.css';
 
-export default function App() {
+const Hello = ({ name, age }) => {
   return (
     <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
+      <p>Hello {name}</p>
     </div>
   );
-}
+};
+
+const App = () => {
+  const name = 'Dipankar';
+  const age = 28;
+  return (
+    <div>
+      <h1>Greetings</h1>
+      <Hello name={name} age={age} />
+      <Hello name="Daisy" age={10 + 12} />
+      <Hello name="George" age={44 + 2} />
+    </div>
+  );
+};
+export default App;
