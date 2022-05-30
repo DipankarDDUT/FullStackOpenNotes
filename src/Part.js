@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Part = (name, exercises) => {
+const Part = ({ name, exercises }) => {
   return (
     <div>
-      {name} {exercises}
+      Hello {name} {exercises}
     </div>
   );
 };

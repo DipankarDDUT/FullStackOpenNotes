@@ -2,7 +2,7 @@ import React from 'react';
 
 import Part from './Part.js';
 
-const Content = (part1, part2, part3) => {
+const Content = ({ part1, part2, part3 }) => {
   return (
     <div>
       <Part name={part1.name} exercises={part1.exercises} />
